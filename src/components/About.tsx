@@ -39,7 +39,7 @@ const About = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = '/resume.pdf';
-    link.download = 'resume.pdf';
+    link.download = 'baharehviani-resume.pdf';
     link.click();
   };
 

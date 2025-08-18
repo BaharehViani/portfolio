@@ -46,10 +46,9 @@ const Navigation = () => {
   };
 
   const downloadResume = () => {
-    // In a real app, this would download an actual resume file
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // You would place your actual resume PDF in the public folder
-    link.download = 'resume.pdf';
+    link.href = '/resume.pdf';
+    link.download = 'baharehviani-resume.pdf';
     link.click();
   };
 
