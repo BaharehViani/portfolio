@@ -1,4 +1,5 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa6';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import poemImage from '@/assets/poem.png';
@@ -12,7 +13,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and Tailwind CSS, featuring smooth animations and optimal performance.',
+      description: 'A modern, responsive portfolio website built with React, TypeScript and Tailwind CSS, with smooth animations and good performance.',
       technologies: ['React', 'Tailwind CSS', 'Motion', 'Vite'],
       image: portfolioImage,
       github: 'https://github.com/BaharehViani/portfolio',
@@ -91,7 +92,7 @@ const Projects = () => {
                     asChild
                   >
                     <a href={project.github} target="_blank" rel="noopener noreferrer" title="view code">
-                      <Github className="w-4 h-4" />
+                      <FaGithub className="w-4 h-4" />
                     </a>
                   </Button>
                   <Button 
@@ -136,7 +137,7 @@ const Projects = () => {
             asChild
           >
             <a href="https://github.com/BaharehViani" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5 mr-2" />
+              <FaGithub className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </a>
           </Button>

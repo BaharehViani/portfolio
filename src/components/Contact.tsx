@@ -159,12 +159,12 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="firstname" className="block text-sm font-medium mb-2">
+                      <label htmlFor="firstName" className="block text-sm font-medium mb-2">
                         First Name
                       </label>
                       <Input
-                        id="firstname"
-                        name="firstname"
+                        id="firstName"
+                        name="firstName"
                         type="text"
                         required
                         value={formData.firstName}

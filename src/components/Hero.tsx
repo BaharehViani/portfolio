@@ -16,7 +16,7 @@ const Hero = () => {
       id="home" 
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(${heroImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(${heroImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -37,8 +37,9 @@ const Hero = () => {
           </p>
           
           <p className="text-lg sm:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-            I craft beautiful, functional, and user-centered digital experiences. 
-            Passionate about bringing ideas to life through clean code and scalable backend systems.
+            I am a passionate developer and creative problem solver.
+            I build modern, beautiful, functional, user-friendly applications and
+            bring ideas to life through clean code, design and scalable backend systems.
           </p>
 
           {/* Social Links */}
