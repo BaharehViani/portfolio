@@ -15,8 +15,8 @@ const Projects = () => {
       description: 'A modern, responsive portfolio website built with React and Tailwind CSS, featuring smooth animations and optimal performance.',
       technologies: ['React', 'Tailwind CSS', 'Motion', 'Vite'],
       image: portfolioImage,
-      github: 'https://github.com',
-      demo: 'https://demo.com'
+      github: 'https://github.com/BaharehViani/portfolio',
+      demo: 'https://baharehviani.netlify.app/'
     },
     {
       title: 'Travel to Barcelona',

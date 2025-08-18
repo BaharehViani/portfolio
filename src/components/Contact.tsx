@@ -42,7 +42,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/BaharehViani', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTelegram, href: 'https://t.me/bh;hkjaharehviani', label: 'Twitter' }
+    { icon: FaTelegram, href: 'https://t.me/baharehviani', label: 'Telegram' }
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
