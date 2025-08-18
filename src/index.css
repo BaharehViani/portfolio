@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    --background: 220 25% 6%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 200 100% 60%;
+    --primary-foreground: 220 25% 6%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 180 100% 55%;
+    --accent-foreground: 220 25% 6%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 15%;
+    --input: 220 15% 15%;
+    --ring: 200 100% 60%;
+
+    /* Portfolio-specific design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(200 100% 60%), hsl(180 100% 55%));
+    --card-gradient: linear-gradient(135deg, hsl(220 20% 8%), hsl(220 15% 12%));
+    --text-gradient: linear-gradient(135deg, hsl(200 100% 60%), hsl(180 100% 55%));
+    --glow: 0 0 30px hsl(200 100% 60% / 0.3);
+    --shadow-elegant: 0 20px 40px -12px hsl(200 100% 60% / 0.25);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .light {
+    --background: 220 15% 98%;
+    --foreground: 220 25% 6%;
+
+    --card: 220 10% 96%;
+    --card-foreground: 220 25% 6%;
+
+    --popover: 220 10% 96%;
+    --popover-foreground: 220 25% 6%;
+
+    --primary: 200 100% 50%;
+    --primary-foreground: 220 15% 98%;
+
+    --secondary: 220 10% 90%;
+    --secondary-foreground: 220 25% 6%;
+
+    --muted: 220 10% 94%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 180 100% 45%;
+    --accent-foreground: 220 15% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 10% 85%;
+    --input: 220 10% 85%;
+    --ring: 200 100% 50%;
+
+    /* Light mode portfolio tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(200 100% 50%), hsl(180 100% 45%));
+    --card-gradient: linear-gradient(135deg, hsl(220 10% 96%), hsl(220 5% 98%));
+    --text-gradient: linear-gradient(135deg, hsl(200 100% 50%), hsl(180 100% 45%));
+    --glow: 0 0 30px hsl(200 100% 50% / 0.2);
+    --shadow-elegant: 0 20px 40px -12px hsl(200 100% 50% / 0.15);
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .card-gradient {
+    background: var(--card-gradient);
+  }
+
+  .text-gradient {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow {
+    box-shadow: var(--glow);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .nav-link {
+    @apply relative transition-smooth hover:text-primary;
+  }
+
+  .nav-link::after {
+    @apply absolute bottom-0 left-0 h-0.5 w-0 bg-primary transition-smooth;
+    content: '';
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .project-card {
+    @apply card-gradient rounded-xl p-6 transition-smooth hover:shadow-elegant hover:scale-105;
+  }
+
+  .skill-badge {
+    @apply bg-primary/10 text-primary px-3 py-1 rounded-full text-sm transition-smooth hover:bg-primary/20;
+  }
+}
