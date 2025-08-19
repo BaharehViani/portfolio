@@ -41,7 +41,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/BaharehViani', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: FaLinkedin, href: null , label: 'LinkedIn' },
     { icon: FaTelegram, href: 'https://t.me/baharehviani', label: 'Telegram' }
   ];
 

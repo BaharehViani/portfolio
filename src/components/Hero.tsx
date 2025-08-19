@@ -62,7 +62,7 @@ const Hero = () => {
               className="bg-background/20 text-white border-white/30 hover:bg-white/10 hover:border-white/50 glow transition-smooth hover:scale-105 backdrop-blur-sm"
               asChild
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="w-5 h-5 mr-2" />
                 LinkedIn
               </a>
