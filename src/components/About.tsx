@@ -51,7 +51,7 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate junior Full Stack Developer with one years of experience building all kinds of applications and APIs.
+            I'm a passionate junior Full Stack Developer with one year of experience building all kinds of applications and APIs.
             I love turning complex problems into elegant, scalable applications.
           </p>
         </div>
